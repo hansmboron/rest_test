@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dio_page.dart';
+import 'get_connect_page.dart';
 import 'http_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -26,6 +27,13 @@ class HomePage extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const DioPage()));
             },
             child: const Text('dio package'),
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const GetConnectPage()));
+            },
+            child: const Text('get(GetConnect) package'),
           ),
         ],
       ),
