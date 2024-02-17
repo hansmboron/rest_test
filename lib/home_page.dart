@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dio_page.dart';
 import 'http_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: 16),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const HttpPage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const DioPage()));
             },
             child: const Text('dio package'),
           ),

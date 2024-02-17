@@ -104,7 +104,7 @@ class _HttpPageState extends State<HttpPage> {
             ),
             const SizedBox(height: 12),
             SelectableText.rich(
-              TextSpan(text: 'Request: ', children: [
+              TextSpan(text: 'request: ', children: [
                 TextSpan(
                   text: '${response?.request?.toString()}',
                   style: const TextStyle(fontWeight: FontWeight.normal),
